@@ -1,0 +1,366 @@
+.container {
+  max-width: 20.99cm;
+  min-width: 0;
+}
+
+.header {
+  margin-bottom: 1.3cm;
+}
+
+.top-line {
+  height: auto;
+}
+
+.top-line__logo img {
+  width: 2.24cm;
+  height: 1.13cm;
+  margin-top: 1.4cm;
+}
+
+.top-line__phone-first, .top-line__phone-second, .top-line__user, .top-line__menu {
+  display: none;
+}
+
+.top-line__contact-information_product-page {
+  display: block;
+  width: 14.2cm;
+}
+
+.mainmenu, .breadcrumbs {
+  display: none;
+}
+
+.article_page-contacts .title-wrapper {
+  display: none;
+}
+
+.article_page-contacts .article__contact-information {
+  padding-left: 0;
+}
+
+.requisites {
+  max-width: 8.44cm;
+  padding: 0.6cm 0.68cm 0.58cm;
+}
+
+.requisites__title {
+  margin-bottom: 0.3cm;
+  font-size: 12pt;
+  line-height: 11.52pt;
+}
+
+.requisites__list {
+  text-indent: 0;
+}
+
+.requisites__item {
+  font-size: 6.72pt;
+  line-height: 13.44pt;
+}
+
+.contact-information {
+  padding-top: 0.6cm;
+}
+
+.contact-information__item, .contact-information .contact-information__link {
+  font-size: 7.68pt;
+  line-height: 10.56pt;
+}
+
+.contact-information__item {
+  padding: 0.2cm 0 0.1cm 1cm;
+  -webkit-background-size: 0.68cm 0.68cm;
+  -o-background-size: 0.68cm 0.68cm;
+  -moz-background-size: 0.68cm 0.68cm;
+       background-size: 0.68cm 0.68cm;
+}
+
+.contact-information__item_time {
+  margin-bottom: 0.5cm;
+}
+
+.contact-information__phone {
+  margin-bottom: 0.2cm;
+}
+
+.contact-information_header {
+  padding-top: 1.3cm;
+}
+
+.contact-information_header .contact-information__item,
+.contact-information_header .contact-information__link {
+  font-size: 7pt;
+  line-height: 10pt;
+}
+
+.contact-information_header .contact-information__item {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 0.15cm;
+  vertical-align: top;
+  background-position: 0 0.15cm;
+}
+
+.contact-information_header .contact-information__item_time {
+  width: 34%;
+  padding-right: 0.3cm;
+}
+
+.contact-information_header .contact-information__item_phones {
+  width: 25%;
+}
+
+.contact-information_header .contact-information__item_email {
+  width: 30%;
+  line-height: 0.68cm;
+}
+
+.contact-information_header .contact-information__phone {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 12.48pt;
+  line-height: 11.52pt;
+}
+
+.store-address__title {
+  margin-bottom: 0.2cm;
+}
+
+.store-address__content {
+  margin-bottom: 0.1cm;
+  margin-left: 0;
+}
+
+.store-address__content p {
+  margin-bottom: 0;
+}
+
+.store-address__address {
+  font-size: 7.68pt;
+  line-height: 10.56pt;
+}
+
+.store-address__floor {
+  display: none;
+}
+
+.store-address__map, .store-address__route-wrapper {
+  float: none;
+  width: auto;
+}
+
+.store-address__map {
+  padding-top: 0.1cm;
+  margin-bottom: 0.26cm;
+}
+
+.store-address__map #map {
+  display: none;
+}
+
+.store-address__printable-map {
+  display: block;
+}
+
+.store-address__printable-map img {
+  width: 17.5cm;
+}
+
+.store-address__route-description {
+  width: 18cm;
+}
+
+.store-address__route-description p {
+  display: inline;
+  margin-bottom: 0;
+  font-size: 7pt;
+  line-height: 7pt;
+}
+
+.store-address_page-contacts {
+  padding: 1cm 0;
+}
+
+.alert {
+  width: 17.5cm;
+  padding: 0.4cm 0;
+}
+
+.alert:before {
+  top: -0.51cm;
+  width: 0.51cm;
+  height: 0.52cm;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+}
+
+.alert__text {
+  width: 100%;
+  font-size: 7pt;
+  line-height: 11.52pt;
+}
+
+.title-wrapper__btn-back, .title-wrapper__right {
+  display: none;
+}
+
+.title-wrapper_product-page {
+  margin-bottom: 0.5cm;
+}
+
+.product-delivery {
+  padding: 0;
+}
+
+.product-delivery__title {
+  margin-bottom: 0.4cm;
+  padding-left: 0.04cm;
+  font-size: 12pt;
+  letter-spacing: -0.01em;
+}
+
+.product-delivery__list-item {
+  margin-bottom: 0.23cm;
+  padding-left: 0.44cm;
+  font-size: 7pt;
+  line-height: 10.56pt;
+}
+
+.product-delivery__list-item:before {
+  left: 0.05cm;
+  width: 0.08cm;
+  height: 0.08cm;
+}
+
+.product {
+  padding-top: 0.1cm;
+}
+
+.product__title {
+  padding-left: 0.1cm;
+  font-size: 12pt;
+  line-height: 14.43pt;
+  letter-spacing: -0.009cm;
+}
+
+.product__photos, .product__tabs {
+  width: 10.1cm;
+}
+
+.product__photos-and-description {
+  margin-bottom: 0.56cm;
+}
+
+.product__photos, .product__description-wrapper {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.product__product-thumbnails, .product__product-photo {
+  display: none !important;
+}
+
+.product__photo-print {
+  display: block;
+}
+
+.product__product-delivery {
+  padding-left: 0.6cm;
+}
+
+.product-description {
+  padding: 0;
+  background: transparent;
+}
+
+.product-description__price-and-buttons {
+  margin-top: 0;
+}
+
+.product-description__price {
+  margin-top: 0.27cm;
+  padding-left: 0.18cm;
+  font-size: 12pt;
+  line-height: 11.52pt;
+  color: #FF6800;
+}
+
+.product-description__buttons {
+  display: none;
+}
+
+.product-characteristics {
+  margin-top: -0.1cm;
+}
+
+.product-characteristics__item {
+  margin-bottom: 0.265cm;
+  font-size: 7pt;
+  line-height: 11.52pt;
+}
+
+.product-characteristics__item_availability .product-characteristics__value {
+  padding-left: 1.14cm;
+  -webkit-background-size: 0.29cm 0.28cm;
+  -moz-background-size: 0.29cm 0.28cm;
+    -o-background-size: 0.29cm 0.28cm;
+       background-size: 0.29cm 0.28cm;
+}
+
+.product-characteristics__item_goods-parameter {
+  margin-top: 0.3cm;
+}
+
+.product-characteristics__name {
+  padding-right: 0;
+  padding-left: 0.65cm;
+}
+
+.product-characteristics__select {
+  margin-left: -0.06cm;
+  padding-left: 0;
+  border: none;
+  background: transparent;
+  font-size: 7pt;
+  line-height: 11.52pt;
+}
+
+.tabs__list {
+  margin-bottom: 0.18cm;
+}
+
+.tabs__list-item {
+  padding: 0;
+  font-size: 12pt;
+  line-height: 14.43pt;
+}
+
+.tabs__list-item:not(.tabs__list-item_active) {
+  display: none;
+}
+
+.tabs__tab-content {
+  padding: 0;
+  background: transparent;
+}
+
+.tabs__tab-content p {
+  margin-bottom: 0.36cm;
+  font-size: 7pt;
+  line-height: 12pt;
+}
+
+.goods, .block-title {
+  display: none;
+}
+
+.footer {
+  display: none;
+}

@@ -1,0 +1,11 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Главная страница'
+
+block content
+	main.page-home
+		include ../components/preview
+		include ../components/home-cats
+		include ../components/home-instagram
+		include ../components/home-about

@@ -1,0 +1,26 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Контакты'
+
+block content
+	main.main-content
+		include ../components/breadcrumbs
+		.article.article_page-contacts
+			.container
+				.row
+					.col-12
+						.title-wrapper.title-wrapper_page-contacts
+							.row
+								h1.article__title.title-wrapper__title.left Контакты
+								a(href="javaScript:window.print();").print-doc.title-wrapper__print-doc.right Распечатать
+				.row
+					.col-6
+						include ../components/requisites
+					.col-6.article__contact-information
+						include ../components/contact-information
+			include ../components/store-address
+			.container
+				.row
+					.col-12
+						include ../components/alert

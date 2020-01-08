@@ -1,0 +1,18 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Каталог'
+
+block content
+	main.page-shop
+		include ../components/breadcrumbs
+		section.title
+			div.container
+				.row
+					.col-12
+						h1 Кровати
+		include ../components/filters
+		include ../components/shop-items
+		include ../components/shop-pagination
+		include ../components/bottom-text
+		include ../components/fav

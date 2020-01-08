@@ -1,0 +1,35 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Страница товара'
+
+block content
+	main.main-content
+		include ../components/breadcrumbs
+		.product
+			.container
+				.row.title-wrapper.title-wrapper_product-page
+					.col-12
+						.left.title-wrapper__left
+							a(href="/catalog.html" title="Перейти в каталог").btn-back.title-wrapper__btn-back
+							h1.product__title.title-wrapper__title Двуспальная кровать Глэдис-РБ P-8580-0
+						.right.title-wrapper__right
+							a(href="#").to-favourites.title-wrapper__to-favourites В избранное
+							a(href="javaScript:window.print();").print-doc.title-wrapper__print-doc Распечатать
+				.row.product__photos-and-description
+					.col-12
+						.left.product__photos
+							include ../components/product-thumbnails
+							include ../components/product-photo
+						.left.product__description-wrapper
+							include ../components/product-description
+				.row.product__tabs-and-delivery
+					.col-12
+						.left.product__tabs
+							include ../components/tabs
+						.left.product__product-delivery
+							include ../components/product-delivery
+				//- include ../components/suitable-kit
+		//- include ../components/related-products
+		#popup-write-review.white-popup.mfp-hide
+			include ../components/write-review

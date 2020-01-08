@@ -1,0 +1,23 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Личный кабинет'
+
+block content
+	main.page-user
+		section.breadcrumbs
+			.container
+				.row
+					.col-12
+						ul.breadcrumbs__links
+							li.breadcrumbs__item
+								a(href="#") Мебелюка
+							li.breadcrumbs__arrow
+							li.breadcrumbs__current
+								a(href="#") Личный кабинет
+		section.title
+			div.container
+				.row
+					.col-12
+						h1 Личный кабинет
+		include ../components/user-personal

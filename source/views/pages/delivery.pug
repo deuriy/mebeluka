@@ -1,0 +1,103 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Доставка мебели'
+
+block content
+	main.page-info
+		include ../components/breadcrumbs
+		section.title.title--delivery
+			div.container
+				.row
+					.col-12
+						h1 Доставка мебели
+		section.info-content
+			.container
+				.row
+					.col-12
+						.info-content__text
+							p Интернет-магазин "Mebeluka" выполняет доставку предметов мебели в пределах Москвы и Московской области. Кроме того, мы можем осуществить доставку в любой регион России.
+							p Мы не обманываем покупателей бесплатными пряниками. Все, что стоит денег, имеет свою цену. Поэтому, у нас платная доставка, стоимость которой закладывается только в доставку, а не в саму мебель.
+							p Мы не рвемся заработать на наших клиентах как можно больше денег, наши цены вас приятно удивят, а качество не разочарует.
+						h3 Стоимость доставки мебели по Москве:
+				.row
+					.col-12
+						.info-content__block
+							.info-content__block-item.info-content__block-item--first
+								img(src="assets/images/content/delivery-icon-1.svg", alt="")
+								.info-content__block-title
+									strong Мелкие предметы
+									span 500 ₽
+								.info-content__block-desk Доставка мелких предметов (сервировочные столики, вешалки, ширмы, кресла качалки (поставляемые в разобранном виде) и все, что приравнивается к мелким предметам) ДО КВАРТИРЫ(если у вас имеется рабочий лифт).
+							.info-content__block-item.info-content__block-item--second
+								img(src="assets/images/content/delivery-icon-2.svg", alt="")
+								.info-content__block-title
+									strong Крупные предметы
+									span 500 ₽
+								.info-content__block-desk Доставка крупных предметов мебели ДО ПОДЪЕЗДА по г. Москва в пределах МКАД.
+							.cb
+							.info-content__block-list
+								ul
+									li.info-content__block-li--first Доставка за МКАД - +25руб/км.
+									li.info-content__block-li--second Доставка любого предмета в Новокосино и Реутов <br/>(со стороны Носовихинского шоссе) ДО ПОДЪЕЗДА - БЕСПЛАТНО.
+					.row
+						.col-12
+							.alert
+								.alert__text!= 'ОБЯЗАТЕЛЬНО проверяйте заказ при получении. Механические повреждения (не хватает части конструкции, следы ударов, сколы, царапины, сломанные пополам ножки и пр.) не являются гарантийным случаем, и претензии после получения, по данным деффектам, не принимаются. "Водитель сказал, что там все нормально"  или "Водиитель спешил, по этому не проверили"- <br/>не является оправданием "не проверки" заказа на отсутсвие механических повреждений. Вы имеете право проверить на комплектность и отсутсвие механических повреждений свой заказ.'
+					.row
+						.col-12
+							h3 Доставка мебели по России
+							.info-content__block.info-content__block--no-m
+								strong Доставка по России осуществляется транспортной компанией, которую Вы можете выбрать сами или воспользоваться рекомендуемыми нами
+								.info-content__block-company
+									.info-content__block-company-item
+										img(src="assets/images/content/delivery-company-1.jpg", alt="")
+										span DHL
+									.info-content__block-company-item
+										img(src="assets/images/content/delivery-company-2.jpg", alt="")
+										span FedEx
+									.info-content__block-company-item
+										img(src="assets/images/content/delivery-company-3.jpg", alt="")
+										span Грузовозофф
+									.info-content__block-company-item
+										img(src="assets/images/content/delivery-company-4.jpg", alt="")
+										span ПЭК
+									.info-content__block-company-item
+										img(src="assets/images/content/delivery-company-5.jpg", alt="")
+										span Желдорэкспедиция 
+								.info-content__block-list
+									ul
+										li Поможем расчитать предварительную стоимость отправки груза в ваш город.
+										li Так же мы можем за вас оформить заявку на отправку.
+										li Отгрузка мебели в транспортную компанию осуществляется по 100% предоплате.
+										li Стоимость подъема мебели на Ваш этаж уточняйте у консультантов.
+					.row
+						.col-12
+							h3 Условия доставки и сборки кухни
+							.privilege
+								.privilege__item
+									img(src="assets/images/content/priv-icon-1.svg", alt="")
+									strong Монтаж
+									span 15 000 ₽
+								.privilege__item
+									img(src="assets/images/content/priv-icon-2.svg", alt="")
+									strong Доставка
+									span 1 500 ₽
+								.privilege__item
+									img(src="assets/images/content/priv-icon-3.svg", alt="")
+									strong Подъем на лифте
+									span 1 500 ₽
+								.privilege__item
+									img(src="assets/images/content/priv-icon-2.svg", alt="")
+									strong Ручной подъем
+									span 1 50 ₽/эт.
+					.row
+						.col-12
+							h3 Дополнительные условия:
+							.info-content__text
+								p Если требуется пропуск для въезда на территорию , то его необходимо заказать заранее. Если он не заказан вовремя по вине клиента, то время ожидания водителем по адресу доставки составит 15 минут. Далее он уезжает. Повторная доставка в этом случае будет по двойному тарифу.
+								p Ожидание водителем клиента по адресу доставки не больше 30 минут.
+					.row
+						.col-12
+							.alert.alert--delivery
+								.alert__text!= 'Если по причинам, не связанным с браком, Вы принимаете решение не покупать доставленную мебель (мебель не подошла по цвету, размеру, фасону и т.д.), Вам следует оплатить доставку, так как эта услуга уже оказана.'

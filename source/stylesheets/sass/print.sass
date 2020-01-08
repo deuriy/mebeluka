@@ -1,0 +1,295 @@
+// Print version
+@import 'base/mixins'
+
+.container
+	max-width: 20.99cm
+	min-width: 0
+
+.header
+	margin-bottom: 1.3cm
+	
+.top-line
+	height: auto
+	
+	&__logo
+		img
+			width: 2.24cm
+			height: 1.13cm
+			margin-top: 1.4cm
+
+	&__phone-first, &__phone-second,
+	&__user, &__menu
+		display: none
+	
+	&__contact-information_product-page
+		display: block
+		width: 14.2cm
+
+.mainmenu, .breadcrumbs
+	display: none
+
+.article
+	&_page-contacts
+		.title-wrapper
+			display: none
+			
+		.article__contact-information
+			padding-left: 0
+
+.requisites
+	max-width: 8.44cm
+	padding: 0.6cm 0.68cm 0.58cm
+	
+	&__title
+		margin-bottom: 0.3cm
+		font-size: 12pt
+		line-height: 11.52pt
+	
+	&__list
+		text-indent: 0
+	
+	&__item
+		font-size: 6.72pt
+		line-height: 13.44pt
+
+.contact-information
+	padding-top: 0.6cm
+
+	&__item, .contact-information__link
+		font-size: 7.68pt
+		line-height: 10.56pt
+	
+	&__item
+		padding: 0.2cm 0 0.1cm 1cm
+		-webkit-background-size: 0.68cm 0.68cm
+		-o-background-size: 0.68cm 0.68cm
+		background-size: 0.68cm 0.68cm
+		
+		&_time
+			margin-bottom: 0.5cm
+	
+	&__phone
+		margin-bottom: 0.2cm
+	
+	&_header
+		padding-top: 1.3cm
+		
+		.contact-information__item,
+		.contact-information__link
+			font-size: 7pt
+			line-height: 10pt
+		
+		.contact-information__item
+			+box-sizing(border-box)
+			display: inline-block
+			padding-top: 0.15cm
+			vertical-align: top
+			background-position: 0 0.15cm
+			
+			&_time
+				width: 34%
+				padding-right: 0.3cm
+			
+			&_phones
+				width: 25%
+			
+			&_email
+				width: 30%
+				line-height: 0.68cm
+		
+		.contact-information__phone
+			margin-bottom: 0
+
+h2
+	font-size: 12.48pt
+	line-height: 11.52pt
+
+.store-address
+	&__title
+		margin-bottom: 0.2cm
+	
+	&__content
+		margin-bottom: 0.1cm
+		margin-left: 0
+		
+		p
+			margin-bottom: 0
+		
+	&__address
+		font-size: 7.68pt
+		line-height: 10.56pt
+	
+	&__floor
+		display: none
+	
+	&__map, &__route-wrapper
+		float: none
+		width: auto
+	
+	&__map
+		padding-top: 0.1cm
+		margin-bottom: 0.26cm
+		
+		#map
+			display: none
+	
+	&__printable-map
+		display: block
+		
+		img
+			width: 17.5cm
+	
+	&__route-description
+		width: 18cm
+		
+		p
+			display: inline
+			margin-bottom: 0
+			font-size: 7pt
+			line-height: 7pt
+		
+	&_page-contacts
+		padding: 1cm 0
+
+.alert
+	width: 17.5cm
+	padding: 0.4cm 0
+
+	&:before
+		top: -0.51cm
+		width: 0.51cm
+		height: 0.52cm
+		+background-size(cover)
+	
+	&__text
+		width: 100%
+		font-size: 7pt
+		line-height: 11.52pt
+
+.title-wrapper
+	&__btn-back, &__right
+		display: none
+	
+	&_product-page
+		margin-bottom: 0.5cm
+
+.product-delivery
+	padding: 0
+
+	&__title
+		margin-bottom: 0.4cm
+		padding-left: 0.04cm
+		font-size: 12pt
+		letter-spacing: -0.01em
+		
+	&__list-item
+		margin-bottom: 0.23cm
+		padding-left: 0.44cm
+		font-size: 7pt
+		line-height: 10.56pt
+		
+		&:before
+			left: 0.05cm
+			width: 0.08cm
+			height: 0.08cm
+
+.product
+	padding-top: 0.1cm
+	
+	&__title
+		padding-left: 0.1cm
+		font-size: 12pt
+		line-height: 14.43pt
+		letter-spacing: -0.009cm
+	
+	&__photos, &__tabs
+		width: 10.1cm
+	
+	&__photos-and-description
+		margin-bottom: 0.56cm
+	
+	&__photos, &__description-wrapper
+		display: inline-block
+		float: none
+		vertical-align: top
+	
+	&__product-thumbnails,
+	&__product-photo
+		display: none !important
+	
+	&__photo-print
+		display: block
+	
+	&__product-delivery
+		padding-left: 0.6cm
+
+.product-description
+	padding: 0
+	background: transparent
+	
+	&__price-and-buttons
+		margin-top: 0
+	
+	&__price
+		margin-top: 0.27cm
+		padding-left: 0.18cm
+		font-size: 12pt
+		line-height: 11.52pt
+		color: #FF6800
+	
+	&__buttons
+		display: none
+
+.product-characteristics
+	margin-top: -0.1cm
+
+	&__item
+		margin-bottom: 0.265cm
+		font-size: 7pt
+		line-height: 11.52pt
+		
+		&_availability .product-characteristics__value
+			padding-left: 1.14cm
+			+background-size(0.29cm 0.28cm)
+		
+		&_goods-parameter
+			margin-top: 0.3cm
+	
+	&__name
+		padding-right: 0
+		padding-left: 0.65cm
+	
+	&__select
+		margin-left: -0.06cm
+		padding-left: 0
+		border: none
+		background: transparent
+		font-size: 7pt
+		line-height: 11.52pt
+
+.tabs
+	&__list
+		margin-bottom: 0.18cm
+		
+	&__list-item
+		padding: 0
+		font-size: 12pt
+		line-height: 14.43pt
+		
+		&:not(.tabs__list-item_active)
+			display: none
+		
+	&__tab-content
+		padding: 0
+		background: transparent
+		
+		p
+			margin-bottom: 0.36cm
+			font-size: 7pt
+			line-height: 12pt
+
+.goods, .block-title
+	display: none
+
+.footer
+	display: none

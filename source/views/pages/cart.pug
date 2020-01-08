@@ -1,0 +1,14 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Корзина'
+
+block content
+	main.page-info
+		include ../components/breadcrumbs
+		section.title
+			div.container
+				.row
+					.col-12
+						h1 Корзина
+		include ../components/cart

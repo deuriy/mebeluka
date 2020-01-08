@@ -1,0 +1,22 @@
+extends ../layout/base
+
+append config
+	- var pageTitle = 'Как сделать заказ'
+
+block content
+	main.main-content
+		include ../components/breadcrumbs
+		.article
+			.container
+				.row
+					.col-12
+						h1.article__title Как сделать заказ
+					.col-9
+						.article__text!= '<div class="discounts discounts_page-order">ВНИМАНИЕ!!! При <span class="discounts__percent">100%</span> предоплате действуют скидки*</div><p>5% при наличной предоплате в магазине  /  3% при оплате через сайт, или по реквизитам. <br>Данные условия не распространяются на акционный товар и  на товар по спец ценам (уточнять у консультантов)</p>'
+				include ../components/payment-options
+				include ../components/purchase-steps
+				.article__text.article__text_additional-information
+					.row
+						.col-12
+							h2 Дополнительная информация
+						.col-9!= '<p>Если Вы хотите посмотреть, как выглядит тот или иной элемент мебели в магазине, предварительно свяжитесь с нами для уточнения, есть ли нужный товар в выставочном зале!</p><p>Независимо от выбранного типа связи, мы постараемся выполнить ваш заказ оперативно и качественно!</p><p>Мы постоянно совершенствуем методы своей работы!</p><p>Кроме того, у нас очень низкие цены и качественная мебель! Мы торгуем мебелью из натуральных материалов!</p>'

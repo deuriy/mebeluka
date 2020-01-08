@@ -1,0 +1,57 @@
+header.header
+	section.top-line
+		.container
+			.row
+				.col-12
+					.top-line__logo
+						a(href="home.html")
+							img(src="assets/images/logo.png", alt="")
+					include ../components/menu-toggle
+					.top-line__phone-first
+						a(href="tel:88007757318") 8 (800) 775 73 18
+						span!= '<div class="top-line__drop-link"><strong>Перезвоните мне</strong><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="9.969" height="5" viewBox="0 0 9.969 5"><path d="M0.113,0.097 C-0.077,0.272 -0.077,0.555 0.113,0.730 L4.625,4.867 C4.716,4.950 4.840,4.998 4.970,4.998 C5.099,4.998 5.223,4.950 5.315,4.867 L9.826,0.730 C9.922,0.643 9.969,0.528 9.969,0.414 C9.969,0.299 9.922,0.185 9.826,0.097 C9.636,-0.077 9.327,-0.077 9.137,0.097 L4.970,3.918 L0.803,0.097 C0.613,-0.078 0.304,-0.078 0.113,0.097 Z" class="cls-1"/></svg></div>'
+							.phone-drop
+								.phone-drop__inner
+									form(action="")
+										.phone-drop__group
+											label(for="p-phone") Ваш телефон
+											input(type="tel", id="p-phone")
+										.phone-drop__group
+											label(for="p-name") Ваше имя
+											input(type="text", id="p-name")
+										.phone-drop__group
+											input(type="submit", value="Отправить заявку")
+					.top-line__phone-second
+						a(href="tel:84952259918") 8 (495) 225-99-18
+						a(href="tel:88007757318") 8 (800) 775-73-18
+					.top-line__user
+						a(href="#") Войти
+					.top-line__cart-mobile.right
+						a(href="#")!= '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="28.82" height="28.81" viewBox="0 0 28.82 28.81"><path d="M28.295,9.767 C27.840,9.199 27.160,8.869 26.443,8.870 L24.841,8.870 L18.247,0.550 C17.747,-0.081 16.843,-0.177 16.228,0.335 C15.612,0.846 15.517,1.772 16.017,2.404 L21.142,8.870 L7.376,8.870 L12.505,2.404 C13.004,1.772 12.910,0.846 12.295,0.335 C11.679,-0.177 10.775,-0.081 10.275,0.550 L3.677,8.885 L2.399,8.885 C1.078,8.885 0.007,9.982 0.006,11.336 C0.006,11.500 0.022,11.665 0.055,11.826 L2.514,24.499 C3.014,27.010 5.171,28.813 7.672,28.813 L21.166,28.813 C23.678,28.813 25.840,26.994 26.329,24.469 L28.774,11.797 C28.917,11.081 28.742,10.337 28.295,9.767 ZM11.069,21.469 C11.069,22.281 10.427,22.939 9.634,22.939 C8.841,22.939 8.199,22.281 8.199,21.469 L8.199,16.454 C8.199,15.641 8.841,14.984 9.634,14.984 C10.427,14.984 11.069,15.641 11.069,16.454 L11.069,21.469 ZM15.854,21.469 C15.854,22.281 15.211,22.939 14.419,22.939 C13.626,22.939 12.983,22.281 12.983,21.469 L12.983,16.454 C12.983,15.641 13.626,14.984 14.419,14.984 C15.211,14.984 15.854,15.641 15.854,16.454 L15.854,21.469 ZM20.639,21.469 C20.639,22.281 19.997,22.939 19.204,22.939 C18.411,22.939 17.768,22.281 17.768,21.469 L17.768,16.454 C17.768,15.641 18.411,14.984 19.204,14.984 C19.997,14.984 20.639,15.641 20.639,16.454 L20.639,21.469 Z" class="cls-1"/></svg><div class="top-line__cart-mobile-num">0</div>'
+					.top-line__mobile-search.right
+						a(href="#")!= '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="21" height="21" viewBox="0 0 21 21"><path d="M20.539,18.411 L15.346,13.188 C15.661,12.715 15.930,12.207 16.150,11.668 C16.989,9.605 16.992,7.330 16.158,5.264 C15.324,3.199 13.746,1.570 11.714,0.679 L11.710,0.677 C10.669,0.234 9.569,0.009 8.438,0.009 C8.434,0.009 8.429,0.009 8.424,0.009 C6.171,0.011 4.053,0.895 2.461,2.498 C0.868,4.101 -0.008,6.233 -0.006,8.499 C-0.004,11.912 2.017,14.977 5.143,16.307 L5.147,16.309 C6.178,16.733 7.260,16.945 8.342,16.945 C9.447,16.945 10.553,16.723 11.604,16.280 C12.189,16.033 12.737,15.726 13.242,15.365 L18.405,20.557 C18.695,20.849 19.076,20.995 19.457,20.995 C19.838,20.995 20.219,20.849 20.509,20.557 L20.539,20.527 C21.119,19.943 21.119,18.994 20.539,18.411 ZM13.842,8.491 C13.843,11.495 11.413,13.939 8.426,13.939 C8.426,13.939 8.426,13.939 8.426,13.939 C5.439,13.939 3.009,11.496 3.009,8.492 C3.009,5.488 5.439,3.045 8.425,3.045 C8.425,3.045 8.425,3.045 8.426,3.045 C11.412,3.045 13.842,5.488 13.842,8.491 Z" class="cls-1"/></svg>'
+					.top-line__menu
+						ul
+							li
+								a(href="#") О магазине
+							li
+								a(href="#") Доставка
+							li
+								a(href="#") Сборка
+							li
+								a(href="#") Контакты
+							li
+								a(href="#") Как сделать заказ
+					.top-line__logo-mobile
+						a(href="home.html")
+							img(src="assets/images/logo.png", alt="Логотип")
+					.top-line__contact-information.right
+						.contact-information.contact-information_header
+							.contact-information__item.contact-information__item_time Прием заказов по телефону с 10:00 по 21:00
+							.contact-information__item.contact-information__item_phones
+								ul.contact-information__phones
+									li.contact-information__phone!= '<a href="tel:+84952259918" class="contact-information__link">8 (495) 225-99-18</a> <span class="contact-information__phone-type">'
+									li.contact-information__phone!= '<a href="tel:+88007757318" class="contact-information__link">8 (800) 775-73-18</a> <span class="contact-information__phone-type">'
+							.contact-information__item.contact-information__item_email!= '<a href="mailto:info@mebeluka.ru" class="contact-information__link">info@mebeluka.ru</a>'
+	include ../components/mainmenu
+	include ../components/mobile-menu

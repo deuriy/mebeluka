@@ -1,0 +1,197 @@
+body
+	background: $white
+	font-family: $default-f
+	font-size: $default-fs
+	position: relative
+	width: 100%
+	-webkit-tap-highlight-color: transparent
+html, body
+	height: 100%
+main
+	display: block
+	box-sizing: border-box
+a
+	text-decoration: none
+	@extend .transition
+img
+	display: block
+	max-width: 100%
+input[type="submit"]
+	@extend .transition
+input, textarea, select
+  outline: none
+  appearance: none
+
+// Default elements for extend
+.inline-block
+	display: inline-block
+	vertical-align: top
+.transition
+	+transition(0.2s ease-in-out)
+.cb
+	clear: both
+
+h1, h2, h3
+	color: $black
+
+h1
+	font-size: 48px
+	line-height: 60px
+
+h2
+	font-size: 26px
+	line-height: 24px
+
+h3
+	font-size: 20px
+	line-height: 24px
+
+p
+	margin-bottom: 22px
+	color: $color-2
+
+a
+	color: $color-1
+	
+	&:hover, &:focus
+		color: $color-hover
+
+.discounts
+	font-size: 20px
+	
+	&__percent
+		color: $color-1
+	
+	&_page-order
+		margin-bottom: 20px
+
+.print-doc
+	display: inline-block
+	padding-left: 29px
+	background: url('../images/icons/icon_print.png') 0 0 no-repeat
+	color: $color-2
+	font-size: 14px
+	line-height: 18px
+
+.title-wrapper
+	&__print-doc
+		margin-top: 26px
+		margin-right: 1px
+	
+	&_product-page
+		margin-top: -10px
+		margin-bottom: 10px
+		
+		.title-wrapper__left, .title-wrapper__right
+			+maxw(992px)
+				float: none
+		
+		.title-wrapper__left
+			+maxw(768px)
+				margin-bottom: 15px
+		
+		.title-wrapper__right
+			+maxw(992px)
+				text-align: right
+		
+		.title-wrapper__btn-back, .title-wrapper__title
+			vertical-align: middle
+		
+		.title-wrapper__btn-back
+			margin-right: 17px
+			
+			+maxw(1240px)
+				margin-right: 11px
+			
+			+maxw(768px)
+				float: left
+				margin-right: 16px
+		
+		.title-wrapper__title
+			display: inline-block
+			
+			+maxw(768px)
+				display: block
+				margin-left: 51px
+				line-height: 30.13px
+		
+		.title-wrapper__to-favourites
+			margin-right: 39px
+			
+			+maxw(992px)
+				margin-right: 55px
+			
+			+maxw(700px)
+				float: left
+				margin-right: 0
+		
+		.title-wrapper__print-doc
+			+maxw(992px)
+				margin-top: 12px
+			
+			+maxw(700px)
+				float: right
+				margin-top: 0
+		
+		+maxw(768px)
+			margin-top: 5px
+
+
+.btn-back
+	display: inline-block
+	width: 35px
+	height: 35px
+	background: url('../images/icons/bg_back.png') 0 0 no-repeat
+
+.to-favourites
+	display: inline-block
+	padding-left: 30px
+	background: url('../images/icons/icon_star.png') 0 0 no-repeat
+	color: $color-2
+	font-size: 14px
+	line-height: 20px
+
+select
+	padding: 9px 28px 9px 13px
+	border: 1px solid $border-1
+	+border-radius(5px)
+	background: #fff url('../images/icons/select_arrow_down.png') 92% center no-repeat
+	font-size: 14px
+	font-family: "Geometria"
+	line-height: 24px
+	cursor: pointer
+
+// Buttons
+.btn-orange
+	+button(12px 40px 16px 41px, 5px, $color-1, #FFF, $color-hover, #FFF, none)
+
+.btn-ghost-orange
+	+button(12px 19px 13px, 5px, transparent, $color-1, $color-1, #FFF, 1px solid $color-1)
+
+// Popup
+.white-popup
+  position: relative
+  width: auto
+  max-width: 840px
+  margin: 20px auto
+  padding: 48px 20px
+  +box-sizing(border-box)
+  +border-radius(5px)
+  background: #FDFDFD
+ 
+.mfp-close-btn-in .mfp-close
+ 	width: 57px
+ 	height: 57px
+ 	line-height: 57px
+ 	font-size: 37px
+ 	opacity: 1
+
+.mfp-wrap.mfp-close-btn-in .mfp-close
+	color: $color-2
+ 	
+	&:hover, &:focus
+		color: #000
+
+.mfp-bg
+	background: #000 !important
+	opacity: 0.2 !important
